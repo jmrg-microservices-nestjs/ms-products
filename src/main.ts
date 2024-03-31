@@ -17,7 +17,7 @@ async function bootstrap() {
   // Habilita CORS para permitir solicitudes de diferentes orígenes
   // app.enableCors();
 
-  // TODO: Implementar la configuración de prefijos globales
+  // TODO: Implementar la configuración de prefijos globales para las rutas
   // Establece un prefijo global para todas las rutas, comenzando con '/api/v1'
   // app.setGlobalPrefix('api/v1');
 
