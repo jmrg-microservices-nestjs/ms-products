@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Teclado",
+    "description": "Teclado Gaming mecánico retroiluminado con teclas programables para una experiencia de juego inmersiva.",
+    "price": "75.25",
+    "available": "1",
+    "createdAt": "1709049027545",
+    "updatedAt": "1709049027545"
+  },
+  {
+    "id": 2,
+    "name": "Mouse",
+    "description": "Mouse óptico de alta precisión, ergonómico, con ajuste de DPI y botones programables, ideal para gaming y oficina.",
+    "price": "150.0",
+    "available": "1",
+    "createdAt": "1709049041977",
+    "updatedAt": "1709049041977"
+  },
+  {
+    "id": 3,
+    "name": "Monitor",
+    "description": "Monitor LED de 24 pulgadas con resolución Full HD, tiempo de respuesta rápido y modo de protección ocular, adecuado para largas horas de trabajo o juego.",
+    "price": "150.0",
+    "available": "1",
+    "createdAt": "1709049047955",
+    "updatedAt": "1709049047955"
+  },
+  {
+    "id": 4,
+    "name": "Audífonos",
+    "description": "Audífonos over-ear con cancelación de ruido, sonido de alta fidelidad y micrófono incorporado, perfectos para música, juegos y llamadas.",
+    "price": "50.0",
+    "available": "1",
+    "createdAt": "1709049048406",
+    "updatedAt": "1709049048406"
+  },
+  {
+    "id": 5,
+    "name": "Laptop",
+    "description": "Laptop de alto rendimiento con procesador de última generación, SSD de gran capacidad y gráficos avanzados, diseñada para profesionales y gamers.",
+    "price": "1000.0",
+    "available": "1",
+    "createdAt": "1709049048754",
+    "updatedAt": "1709049048754"
+  },
+  {
+    "id": 6,
+    "name": "Smartphone",
+    "description": "Smartphone con pantalla AMOLED, cámaras de alta resolución, batería de larga duración y rendimiento excepcional, ideal para el día a día.",
+    "price": "800.0",
+    "available": "1",
+    "createdAt": "1709049058406",
+    "updatedAt": "1709049058406"
+  },
+  {
+    "id": 7,
+    "name": "Tablet",
+    "description": "Tablet versátil con pantalla táctil de alta resolución, diseño ligero y batería de larga duración, perfecta para leer, navegar y trabajar.",
+    "price": "300.0",
+    "available": "1",
+    "createdAt": "1709049063205",
+    "updatedAt": "1709049063205"
+  },
+  {
+    "id": 8,
+    "name": "Impresora",
+    "description": "Impresora multifunción con capacidad de imprimir, escanear y copiar documentos en alta calidad, fácil de conectar y usar.",
+    "price": "200.0",
+    "available": "1",
+    "createdAt": "1709049068123",
+    "updatedAt": "1709049068123"
+  },
+  {
+    "id": 9,
+    "name": "Altavoces",
+    "description": "Altavoces estéreo de alta fidelidad con conexión Bluetooth, diseño compacto y sonido envolvente, ideales para música, películas y juegos.",
+    "price": "150.0",
+    "available": "1",
+    "createdAt": "1709049073021",
+    "updatedAt": "1709049073021"
+  },
+  {
+    "id": 10,
+    "name": "Cámara",
+    "description": "Cámara digital con sensor de alta resolución, zoom óptico potente y modos de disparo avanzados, diseñada para fotógrafos entusiastas y profesionales.",
+    "price": "400.0",
+    "available": "1",
+    "createdAt": "1709049077943",
+    "updatedAt": "1709049077943"
+  },
+  {
+    "id": 11,
+    "name": "Televisor",
+    "description": "Televisor inteligente 4K UHD con pantalla LED, acceso a aplicaciones de streaming, comando de voz y una calidad de imagen impresionante.",
+    "price": "700.0",
+    "available": "1",
+    "createdAt": "1709049082912",
+    "updatedAt": "1709049082912"
+  },
+  {
+    "id": 12,
+    "name": "Router",
+    "description": "Router de alta velocidad con tecnología de doble banda, seguridad avanzada y fácil configuración, ideal para hogares y pequeñas oficinas.",
+    "price": "80.0",
+    "available": "1",
+    "createdAt": "1709049087876",
+    "updatedAt": "1709049087876"
+  },
+  {
+    "id": 13,
+    "name": "Reproductor Blu-ray",
+    "description": "Reproductor Blu-ray con capacidad de reproducción en alta definición, compatibilidad con múltiples formatos y conexión a Internet.",
+    "price": "180.0",
+    "available": "1",
+    "createdAt": "1709049092805",
+    "updatedAt": "1709049092805"
+  },
+  {
+    "id": 14,
+    "name": "Teclado inalámbrico",
+    "description": "Teclado inalámbrico compacto y ergonómico, con conexión Bluetooth, teclas silenciosas y diseño resistente a derrames, ideal para trabajo y entretenimiento.",
+    "price": "60.0",
+    "available": "1",
+    "createdAt": "1709049097701",
+    "updatedAt": "1709049097701"
+  },
+  {
+    "id": 15,
+    "name": "Mouse inalámbrico",
+    "description": "Mouse inalámbrico con diseño ergonómico, sensor óptico de alta precisión y botones programables, perfecto para usuarios exigentes.",
+    "price": "80.0",
+    "available": "1",
+    "createdAt": "1709049102663",
+    "updatedAt": "1709049102663"
+  }
+]
