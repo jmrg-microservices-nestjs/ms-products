@@ -13,7 +13,7 @@ async function bootstrap() {
     },
   });
 
-  // TODO: Implementar la configuración de CORS
+  // TODO: Implementar la configuración de CORS para permitir solicitudes de diferentes orígenes
   // Habilita CORS para permitir solicitudes de diferentes orígenes
   // app.enableCors();
 
