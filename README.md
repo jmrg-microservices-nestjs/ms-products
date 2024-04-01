@@ -5,7 +5,7 @@
 + Clone the repository
 + Run `npm install`
 + Create a `.env` file in the root of the project and add the following:
-  ```
+  ``` dotenv
   PORT=3000
   DATABASE='./PRISMA/<file>.db'
   ```
