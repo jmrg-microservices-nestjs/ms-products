@@ -27,12 +27,14 @@ async function bootstrap() {
       forbidNonWhitelisted: true,
     }),
   );
-  await app.listen().then(() => {
+  await app.listen()
+    .then(() => {
     logger.log(`ms-products-app is running on port ${envs.PORT}`);
   });
 }
 
-bootstrap().catch((error) => {
+bootstrap()
+  .catch((error) => {
   const logger = new Logger('Bootstrap');
   logger.error('Application failed to start', error);
 });

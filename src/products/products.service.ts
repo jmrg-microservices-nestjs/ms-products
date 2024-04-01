@@ -1,8 +1,9 @@
-import { Injectable, Logger, NotFoundException, OnModuleInit } from '@nestjs/common';
+import { HttpStatus, Injectable, Logger, NotFoundException, OnModuleInit } from '@nestjs/common';
 import { CreateProductDto } from './dto/create-product.dto';
 import { UpdateProductDto } from './dto/update-product.dto';
 import { PrismaClient } from '@prisma/client';
 import { PaginationDto } from '../common';
+import { RpcException } from '@nestjs/microservices';
 
 @Injectable()
 export class ProductsService extends PrismaClient implements OnModuleInit {
@@ -38,11 +39,17 @@ export class ProductsService extends PrismaClient implements OnModuleInit {
   }
 
   async findOne(id: number) {
+    if(!id) throw new RpcException(`Id: #${id} not found`);
+
     const product = await this.product.findFirst({
       where: { id, available: true },
     });
+
     if (!product) {
-      throw new NotFoundException(`Product #${id} not found`);
+      throw new RpcException({
+        message:`Product #${id} not found`,
+        status:HttpStatus.BAD_REQUEST
+    });
     }
     return product;
   }
@@ -50,6 +57,9 @@ export class ProductsService extends PrismaClient implements OnModuleInit {
   async update(id: number, updateProductDto: UpdateProductDto) {
     const { id: _, ...data } = updateProductDto;
     await this.findOne(id);
+    if (!id) {
+      throw new RpcException(`Id: #${id} not found`);
+    }
     return this.product.update({
       where: { id },
       data: data,
@@ -62,7 +72,7 @@ export class ProductsService extends PrismaClient implements OnModuleInit {
     });
 
     if (!product) {
-      throw new NotFoundException(`Product #${id} not found`);
+      throw new RpcException(`Product #${id} not found`);
     }
 
     const deleteProduct = await this.product.delete({
@@ -77,12 +87,21 @@ export class ProductsService extends PrismaClient implements OnModuleInit {
 
   async softDeleteService(id: number) {
     await this.findOne(id);
+
+    if (!id) {
+      throw new RpcException(`Id: #${id} not found`);
+    }
+
     const product = await this.product.update({
       where: { id },
       data: {
         available: false,
       },
     });
+
+    if (!product) {
+      throw new RpcException(`Product #${id} not found`);
+    }
 
     return product;
   }
